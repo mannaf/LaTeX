@@ -1,0 +1,186 @@
+\documentclass[a4paper, 12pt, oneside]{report}
+%\documentclass{article} To write the article
+
+%my package
+% \usepackage{showframe}
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+\usepackage{diagbox}
+
+% for Index Package 
+\usepackage[T1]{fontenc}
+\usepackage{imakeidx}
+\makeindex[columns=2, title= INDEX]
+
+
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage[english]{babel}
+
+% to show refernce in table of contents
+\usepackage[nottoc]{tocbibind}
+\usepackage[
+backend=biber,
+style=apa,
+sorting=nyt,
+]{biblatex}
+\addbibresource{biblio.bib}
+
+% to insert images
+\usepackage{graphicx}
+
+% to insert math equations
+\usepackage{amsmath}
+
+% to insert symbols
+\usepackage{amssymb}
+
+\usepackage{dirtytalk}
+\usepackage{multicol}
+
+% To set captions 
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+\usepackage{fancyhdr}
+% To make a heading of Reference
+
+%Page Margins settings
+\setlength{\headheight}{15pt}
+\setlength{\topmargin}{-0.5in}
+\setlength{\oddsidemargin}{20pt}
+\setlength{\evensidemargin}{15pt}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{6.25in}
+\setlength{\parindent}{3em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
+
+\makeatother
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, fancyhdr, color, comment, graphicx, environ}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[shortlabels]{enumitem}
+\usepackage{indentfirst}
+\pagestyle{fancy}
+\newenvironment{problem}[2][Problem]
+{ \begin{mdframed}[backgroundcolor=gray!20] \textbf{#1 #2} \\}
+	{  \end{mdframed}}
+
+\newenvironment{solution}{\textbf{Solution}\\}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\begin{document}
+\include{cover1}
+\clearpage
+\pagenumbering{roman}
+\include{titlepage}
+
+\include{certificate}
+
+\include{dedication}
+
+\include{abstract}
+
+\include{Acknowledgement}
+
+\tableofcontents  %to make the table of contents  
+
+\listoffigures % for list of figures
+
+\listoftables % For list of Tables
+
+%to start the page numbering from desired number we used 
+
+         % start roman page numbering
+\clearpage
+\pagenumbering{arabic}  % start Arabic page numbering
+
+%chapter1 formatting
+\chapter{Introduction and Preview}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small Introduction and Preview}
+\lhead{\small Chapter 1}
+\rfoot{\thepage}
+\lfoot{\small M.S. Thesis}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{2pt}
+\input{chapter1}
+
+%chapter2 formatting
+\chapter{Basic information theory}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small Basic information theory}
+\lhead{\small Chapter 2}
+\rfoot{\thepage}
+\lfoot{\small M.S. Thesis}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{2pt}
+\input{chapter2}
+
+%chapter3 formatting
+\chapter{Write Your Third Chapter's Name}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small Write Your Third Chapter's Name}
+\lhead{\small Chapter 3}
+\rfoot{\thepage}
+\lfoot{\small M.S. Thesis}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{2pt}
+\input{chapter3}
+
+%chapter4 formatting
+\chapter{Write Your Fourth Chapter's Name}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small Write Your Fourth Chapter's Name}
+\lhead{\small Chapter 4}
+\rfoot{\thepage}
+\lfoot{\small M.S. Thesis}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{2pt}
+\input{chapter4}
+
+%chapter5 formatting
+\chapter{Write Your Fifth Chapter's Name}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small Write Your Fifth Chapter's Name}
+\lhead{\small Chapter 5}
+\rfoot{\thepage}
+\lfoot{\small M.S. Thesis}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{2pt}
+\input{chapter5}
+
+%References formatting
+\newpage
+\renewcommand{\bibname}{References}
+%to set the reference format
+%\def\bibsection{\section*{References}}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{References}
+\rfoot{\thepage}
+\lfoot{M.S. Thesis}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{2pt}
+\printbibliography
+\clearpage
+\printindex
+\end{document}

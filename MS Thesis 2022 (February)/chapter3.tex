@@ -1,0 +1,77 @@
+Chapter summary
+\section{Entropy}
+Description about Entropy 
+\subsection{Definition}
+\hspace{4em}
+Entropy measure the uncertainty ..........
+\hspace{4em}
+\begin{problem}{01}
+Let $X$ and $Y$ be to random variable. Then the time series of two random variable are:  
+$$ X = \text{[ 1 2 1 0 1 0 0 1 ]} $$
+$$ Y = \text{[ 2 2 3 1 1 2 1 0 ]}$$
+Find the Entropy, Join Entropy, Conditional Entropy, Mutual Information etc. 
+\end{problem}
+\begin{solution}
+We know that, 
+\begin{align*}
+    H(X) &= - \sum_{x\in X } p(X=x) log_{2} p(X=x) \\
+    P_x(0) &= \frac{3}{8}  \hspace{10mm}   P_x(1) = \frac{3}{8}  \hspace{10mm}    P_x(2) = \frac{3}{8}  \\  
+\end{align*}
+\text{we know that,} 
+\begin{align*}
+    H(X) &= - \sum_{x\in X } p(X=x) log_{2} p(X=x) \\
+    &= P(0)\cdot \log_{2}(P(0)) + P(1)\cdot \log_{2}(P(1)) + P(2)\cdot \log_{2}(P(2))\\
+    &= \frac{3}{8} \cdot \log_{2}(\frac{3}{8}) + \frac{1}{2} \cdot \log_{2}(\frac{1}{2}) + \frac{1}{8} \cdot \log_{2}(\frac{1}{8})
+\end{align*}
+\textbf{Entropy for Y}
+\begin{align*}
+    Y = [\text{ 2 2 3 1 1 2 1 0 }]\\
+    P(0) = \frac{1}{8} \hspace{10mm} P(1) = \frac{1}{8} \\
+    P(2) = \frac{3}{8} \hspace{10mm} P(3) = \frac{1}{8}
+\end{align*}
+\begin{align*}
+    H(Y) &= - \sum_{y\in y } p(Y=y) log_{2} p(Y=y) \\
+    &= P(0)\cdot \log_{2}(P(0)) + P(1)\cdot \log_{2}(P(1)) + P(2)\cdot \log_{2}(P(2))+P(3)\cdot \log_{2}(P(3))\\
+    &= \frac{1}{8} \cdot \log_{2}(\frac{1}{8}) + \frac{3}{8} \cdot \log_{2}(\frac{3}{8}) + \frac{3}{8} \cdot \log_{2}(\frac{3}{8}) + \frac{1}{8} \cdot \log_{2}(\frac{1}{8})
+\end{align*}
+
+\end{solution}
+\subsection{Write Here Your First Subsection Heading}
+\hspace{4em}
+Text in the
+
+
+\section{Joint Entropy}
+\hspace{4em}
+Description ....... 
+\subsection{Definition}
+\hspace{4em}
+Text in the  
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l||*{4}{c|}}\hline
+    \diagbox[]{X}{Y}
+       &\makebox[2em]{0}&\makebox[2em]{1}&\makebox[2em]{2}&\makebox[2em]{3}\\\hline\hline
+       $0$ & 0 & $\frac{1}{8}$ & $\frac{1}{8}$ & 0\\\hline
+       $1$ &$\frac{1}{8}$&$\frac{1}{8}$&$\frac{1}{8}$&$\frac{1}{8}$\\\hline
+       $2$ & $0$ & $0$ & $\frac{1}{8} $ &0 \\\hline
+    \end{tabular}
+    \caption{Join Entropy}
+    \label{tab:my_label}
+\end{table}
+\begin{align*}
+    H(X,Y) &= - \sum_{x\in X, y\in Y } p(X=x,Y=y) \cdot log_{2} p(X=x,Y=y)  \\
+    P(0,0) &= 0,  \hspace{10mm}   P(0,1) = \frac{1}{8},  \hspace{10mm}  P(0,2) = \frac{1}{8},  \hspace{10mm} P(0,3) = 0\\
+    P(1,0) &= \frac{1}{8},\hspace{10mm}P(1,1) = \frac{1}{8},\hspace{10mm}P(1,2) = \frac{1}{8},\hspace{10mm} P(1,3) = \frac{1}{8}\\
+    P(2,0) &= 0,\hspace{10mm} P(2,1) = 0,\hspace{10mm}P(2,2) = \frac{1}{8},\hspace{10mm}P(2,3) = 0
+\end{align*}
+        
+\begin{align}
+    H(X,Y) &= - \sum_{x\in X, y\in Y } p(X=x,Y=y) \cdot log_{2} p(X=x,Y=y) \nonumber \\ 
+    &= p(0,0)  log_{2} p(0,0) + p(0,1)  log_{2} p(0,1) + p(0,2)  log_{2} p(0,2) + p(0,3)  log_{2} p(0,3)+ \nonumber \\ 
+    &\mathrel{\phantom{=}} p(1,0) log_{2} p(1,0) + p(1,1) log_{2} p(1,1) + p(1,2) log_{2} p(1,2) + p(1,3)  log_{2} p(1,3)+\nonumber \\  
+    &\mathrel{\phantom{=}} p(2,0)  log_{2} p(2,0) + p(2,1) log_{2} p(2,1) + p(2,2)  log_{2} p(2,2) + p(2,3) log_{2} p(2,3)\nonumber\\
+    &=0+\frac{2}{8}+\frac{1}{8}+0+\frac{1}{8}+\frac{1}{8}+\frac{1}{8}+\frac{1}{8}+0+0+\frac{1}{8}++0\nonumber\\
+    &=\nonumber
+\end{align}

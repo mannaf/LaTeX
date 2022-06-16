@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[skins,theorems]{tcolorbox}
+\tcbset{highlight math style={enhanced,
+  colframe=red,colback=white,arc=0pt,boxrule=1pt}}
+\begin{document}
+\begin{equation}
+\tcbhighmath[drop fuzzy shadow]{\Delta = b^2 - 4ac}
+\end{equation}
+
+\begin{equation}
+\tcbhighmath[boxrule=2pt,drop fuzzy shadow=blue]{E = m\cdot c^2}
+\end{equation}
+
+\begin{equation}
+\tcbhighmath[boxrule=0.4pt,colframe=blue,drop fuzzy shadow=red]{a^2 + b^2} =
+\tcbhighmath[arc=4pt,drop fuzzy shadow=green]{c^2}
+\end{equation}
+
+\begin{equation}
+\tcbhighmath[boxrule=2pt,arc=1pt,colback=blue!10!white,colframe=blue,
+  drop fuzzy shadow=red]{ \ln|x| = \int\limits_1^x t~dt }
+\end{equation}
+
+\begin{equation}
+\tcbhighmath[fuzzy halo=1mm with blue!50!white,arc=2pt,
+  boxrule=0pt,frame hidden]{ \ln|x| = \int\limits_1^x t~dt }
+\end{equation}
+
+\tcbset{myinner/.style={no shadow,shrink tight,extrude by=1mm,colframe=blue,
+  boxrule=0.4pt,frame style={opacity=0.25},interior style={opacity=0.5}}}
+\begin{equation}
+\tcbhighmath[drop fuzzy shadow=red!50!yellow,colback=red!20!white]{
+  \tcbhighmath[myinner]{\Delta} =
+  \tcbhighmath[myinner]{b^2 - 4ac}}
+\end{equation}
+
+\end{document}

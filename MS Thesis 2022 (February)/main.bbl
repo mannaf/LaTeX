@@ -1,0 +1,155 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{asaithambi2021synthesis}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=3c9a572da91cfab1806d9a974d1f6b87}{%
+           family={Asaithambi},
+           familyi={A\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1942fab3841874eaec791e72a5697461}{%
+           family={Sakthivel},
+           familyi={S\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50298dd31966f79d06a764293f9c3bc7}{%
+           family={Karuppaiah},
+           familyi={K\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8fbfcf3742c90ae331ebacd1ad61cd55}{%
+           family={Balamurugan},
+           familyi={B\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0381852c84f8eed8823cb5cd42b2d338}{%
+           family={Yuvakkumar},
+           familyi={Y\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a40d891dbcf5797057085b0e8f89ddfb}{%
+           family={Thambidurai},
+           familyi={T\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec4d8c15700b536b1ceab4607adb7289}{%
+           family={Ravi},
+           familyi={R\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5f60e9bd10ba8b452cf49a057c6fb9da}
+      \strng{fullhash}{fd30bfa2c1b870b22d55593b31e13b92}
+      \strng{bibnamehash}{fd30bfa2c1b870b22d55593b31e13b92}
+      \strng{authorbibnamehash}{fd30bfa2c1b870b22d55593b31e13b92}
+      \strng{authornamehash}{5f60e9bd10ba8b452cf49a057c6fb9da}
+      \strng{authorfullhash}{fd30bfa2c1b870b22d55593b31e13b92}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Alloys and Compounds}
+      \field{title}{{“Synthesis And Characterization of Various Transition Metals Doped SnO$_2$@ MoS$_2$ Composites for Supercapacitor and Photocatalytic Applications”}}
+      \field{volume}{853}
+      \field{year}{2021}
+      \field{pages}{157060}
+      \range{pages}{1}
+    \endentry
+    \entry{vellacheri2014high}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=d7cec176f32a35b7b9e032d364635b67}{%
+           family={Vellacheri},
+           familyi={V\bibinitperiod},
+           given={Ranjith},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d945c364711e5654db10b8d03fe47a77}{%
+           family={Al-Haddad},
+           familyi={A\bibinithyphendelim H\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=96fe493e6bbc2b051ddc93f33bb3a2e8}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Huaping},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d8d616cd6a8bc198d24445fdcbe00c2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wenxin},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9627a4828ff884b7fc794181378b2cae}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chengliang},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9ada906b647994df24e2e081f7afeb9}{%
+           family={Lei},
+           familyi={L\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{95e3948c8f58e56bbb2cd60a10ffe9fc}
+      \strng{fullhash}{4b0e2316f42205be90ae49e05dfb5fb6}
+      \strng{bibnamehash}{4b0e2316f42205be90ae49e05dfb5fb6}
+      \strng{authorbibnamehash}{4b0e2316f42205be90ae49e05dfb5fb6}
+      \strng{authornamehash}{95e3948c8f58e56bbb2cd60a10ffe9fc}
+      \strng{authorfullhash}{4b0e2316f42205be90ae49e05dfb5fb6}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nano Energy}
+      \field{title}{{“High Performance Supercapacitor for Efficient Energy Storage Under Extreme Environmental Temperature”}}
+      \field{volume}{8}
+      \field{year}{2014}
+      \field{pages}{231\bibrangedash 237}
+      \range{pages}{7}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

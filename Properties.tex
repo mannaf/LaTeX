@@ -1,0 +1,35 @@
+% \documentclass{article}
+% \usepackage{enumitem}
+
+% % From <https://tex.stackexchange.com/a/37741/73317> (Torbjørn T.)
+% \newlist{Properties}{enumerate}{2}
+% \setlist[Properties]{label=Property \arabic*., font=\textbf, itemindent=*}
+
+% \begin{document}
+
+% \begin{Properties}
+%   \item First
+%   \item Second
+% \end{Properties}
+
+% \end{document}
+\documentclass{article}
+
+\begin{document}
+
+\begin{itemize}
+
+  \item[about] Foo\\
+  Lorem ipsum dolor sit amet, consectetur, adipisci velit
+
+  \item[about] sort rules(...)
+    \begin{sloppypar}
+    Lorem ipsum dolor sit amet, consectetur, adipisci velit
+    \end{sloppypar}
+
+  \item[about] sort rules(...)
+
+    Lorem ipsum dolor sit amet, consectetur, adipisci velit
+
+\end{itemize}
+\end{document}
